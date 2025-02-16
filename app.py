@@ -1,34 +1,31 @@
-from flask import Flask, render_template, request, jsonify
-from rdflib import Graph, URIRef
+from flask import Flask, request, render_template
+from rdflib import Graph, URIRef, Namespace
 
 app = Flask(__name__)
 
 g = Graph()
-g.parse("mytourism.owl", format="xml")
+g.parse('mytourism.owl', format='xml')
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+ns = Namespace("http://www.my_ontology.edu/mytourism#")
 
-@app.route('/search', methods=['GET'])
-def search():
-    query = request.args.get('q', '').lower()
+@app.route('/', methods=['GET', 'POST'])
+def search_province():
     results = []
-
-    for s, p, o in g:
-        subject = str(s).lower()
-        obj = str(o).lower()
-
-        if query in subject or query in obj:
-            # หากเจอชื่อจังหวัดหรือคำที่ตรง ให้ดึงข้อมูลทั้งหมดของ NamedIndividual นั้น
-            for sub, pred, obj_ in g.triples((s, None, None)):
-                results.append({
-                    "predicate": str(pred),
-                    "object": str(obj_)
-                })
-            break
-
-    return jsonify(results)
+    seen = set()
+    lang = request.form.get('lang', request.args.get('lang', 'th'))
+    if request.method == 'POST':
+        query = request.form['query'].lower()
+        for s, p, o in g:
+            if isinstance(s, URIRef) and ns.ThaiProvince in g.objects(s, None):
+                if query in str(s).lower() or query in str(o).lower():
+                    for pred, obj in g.predicate_objects(s):
+                        if pred != ns.type and pred != URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type") and str(obj) not in seen:
+                            if not hasattr(obj, 'language') or obj.language == lang:
+                                seen.add(str(obj))
+                                results.append(f"{pred.split('#')[-1]} -> {obj}")
+        if not results:
+            results.append("ไม่พบข้อมูลที่ค้นหา" if lang == 'th' else "No data found")
+    return render_template('index.html', results=results, lang=lang, current_lang=lang)
 
 if __name__ == '__main__':
     app.run(debug=True)
