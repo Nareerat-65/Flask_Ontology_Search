@@ -1,0 +1,56 @@
+# สร้างไฟล์ index.html ในโฟลเดอร์ templates
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontology Search</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Ontology Search System</h1>
+
+    <div>
+        <label for="language">Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="th">ไทย</option>
+        </select>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search here...">
+    <button onclick="searchOntology()">Search</button>
+
+    <div id="results"></div>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        let translations = {
+            "en": {"title": "Ontology Search System", "search": "Search here...", "results": "Search Results:"},
+            "th": {"title": "ระบบค้นหาจากออนโทโลยี", "search": "ค้นหาที่นี่...", "results": "ผลการค้นหา:"}
+        };
+
+        function changeLanguage() {
+            const lang = document.getElementById('language').value;
+            document.querySelector('h1').innerText = translations[lang].title;
+            document.getElementById('searchInput').placeholder = translations[lang].search;
+            document.getElementById('results').innerHTML = '';
+        }
+
+        function searchOntology() {
+            const query = document.getElementById('searchInput').value;
+            fetch(`/search?q=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    const lang = document.getElementById('language').value;
+                    let output = `<h3>${translations[lang].results}</h3>`;
+                    data.forEach(item => {
+                        output += `<p><strong>${item.subject}</strong> (${item.predicate}) -> ${item.object}</p>`;
+                    });
+                    document.getElementById('results').innerHTML = output;
+                });
+        }
+    </script>
+</body>
+</html>
