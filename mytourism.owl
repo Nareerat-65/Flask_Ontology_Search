@@ -130,10 +130,14 @@ Precious Name Nakhon Ping
   <hasFlower xml:lang="en">Bastard Teak</hasFlower>
   <hasSeal xml:lang="th">ช้างเผือกในเรือนแก้ว</hasSeal>
   <hasSeal xml:lang="en">White Elephant in Glass Cover</hasSeal>
-  <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.8</hasLatitudeOfProvince>
-  <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98.98</hasLongitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="en">18.8</hasLatitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="th">18.8</hasLatitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="en">98.98</hasLongitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="th">98.98</hasLongitudeOfProvince>
   <hasImageOfProvince xml:lang="en">chiangmai.jpg</hasImageOfProvince>
+  <hasImageOfProvince xml:lang="th">chiangmai.jpg</hasImageOfProvince>
   <hasURLOfProvince xml:lang="en">http://www.chiangmai.go.th</hasURLOfProvince>
+  <hasURLOfProvince xml:lang="th">http://www.chiangmai.go.th</hasURLOfProvince>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#NakhonSawan">
@@ -165,10 +169,14 @@ Good Taste Fish of Paknampho
   <hasFlower xml:lang="th">เสลา</hasFlower>
   <hasSeal xml:lang="th">วิมานลอย</hasSeal>
   <hasSeal xml:lang="en">Sky Castle</hasSeal>
-  <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.7</hasLatitudeOfProvince>
-  <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.07</hasLongitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="en">15.7</hasLatitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="th">15.7</hasLatitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="en">100.07</hasLongitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="th">100.07</hasLongitudeOfProvince>
   <hasImageOfProvince xml:lang="en">nakhonsawan.jpg</hasImageOfProvince>
+  <hasImageOfProvince xml:lang="th">nakhonsawan.jpg</hasImageOfProvince>
   <hasURLOfProvince xml:lang="en">http://www.nakhonsawan.go.th</hasURLOfProvince>
+  <hasURLOfProvince xml:lang="th">http://www.nakhonsawan.go.th</hasURLOfProvince>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Pichit">
@@ -205,10 +213,14 @@ Legend of Cha La Wan the Crocodile
   <hasFlower xml:lang="en">Nymphaea lotus</hasFlower>
   <hasSeal xml:lang="th">ต้นโพธิ์ริมสระหลวง</hasSeal>
   <hasSeal xml:lang="en">Sacred fig Tree and Sra Loung Pool</hasSeal>
-  <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.44</hasLatitudeOfProvince>
-  <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.35</hasLongitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="en">16.44</hasLatitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="th">16.44</hasLatitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="en">100.35</hasLongitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="th">100.35</hasLongitudeOfProvince>
   <hasImageOfProvince xml:lang="en">pichit.jpg</hasImageOfProvince>
+  <hasImageOfProvince xml:lang="th">pichit.jpg</hasImageOfProvince>
   <hasURLOfProvince xml:lang="en">http://www.phichit.go.th</hasURLOfProvince>
+  <hasURLOfProvince xml:lang="th">http://www.phichit.go.th</hasURLOfProvince>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#Phitsanulok">
@@ -236,10 +248,14 @@ Beautiful Caves and Waterfalls
   <hasFlower xml:lang="en">Yellow Flamboyant</hasFlower>
   <hasSeal xml:lang="th">พระพุทธชินราช</hasSeal>
   <hasSeal xml:lang="en">Image of Buddha Chin Na Raj</hasSeal>
-  <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.82</hasLatitudeOfProvince>
-  <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.27</hasLongitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="en">16.82</hasLatitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="th">16.82</hasLatitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="en">100.27</hasLongitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="th">100.27</hasLongitudeOfProvince>
   <hasImageOfProvince xml:lang="en">phitsanulok.jpg</hasImageOfProvince>
+  <hasImageOfProvince xml:lang="th">phitsanulok.jpg</hasImageOfProvince>
   <hasURLOfProvince xml:lang="en">http://www.phitsanulok.go.th</hasURLOfProvince>
+  <hasURLOfProvince xml:lang="th">http://www.phitsanulok.go.th</hasURLOfProvince>
   <hasFlower xml:lang="en">Lagerstroemia loudoni</hasFlower>
   <hasTraditionalNameOfProvince xml:lang="en">Pra Phitsanulok Song Kwae City</hasTraditionalNameOfProvince>
   <hasTraditionalNameOfProvince xml:lang="th">นครสระหลวงสองแคว</hasTraditionalNameOfProvince>
@@ -284,10 +300,14 @@ Famous Cattle Buffalos Market
   <hasFlower xml:lang="en">Yellow Silk Cotton</hasFlower>
   <hasSeal xml:lang="th">ศาลพระชนกจักรีหน้าเขาสะแกกรัง</hasSeal>
   <hasSeal xml:lang="en">The Grand Primordial Father's Shrine in front of Sa Kae Krang Mountain</hasSeal>
-  <hasLatitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.38</hasLatitudeOfProvince>
-  <hasLongitudeOfProvince rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.03</hasLongitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="en">15.38</hasLatitudeOfProvince>
+  <hasLatitudeOfProvince xml:lang="th">15.38</hasLatitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="en">100.03</hasLongitudeOfProvince>
+  <hasLongitudeOfProvince xml:lang="th">100.03</hasLongitudeOfProvince>
   <hasImageOfProvince xml:lang="en">uthaithani.jpg</hasImageOfProvince>
+  <hasImageOfProvince xml:lang="th">uthaithani.jpg</hasImageOfProvince>
   <hasURLOfProvince xml:lang="en">http://www.uthaithani.go.th</hasURLOfProvince>
+  <hasURLOfProvince xml:lang="th">http://www.uthaithani.go.th</hasURLOfProvince>
 </owl:NamedIndividual>
 
 
